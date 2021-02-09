@@ -1,0 +1,188 @@
+/*
+COLOR PALLET
+#F7FFF7 -- almost white
+#343434 -- dark grey - almost black
+#2F3061 -- blue dark
+#FFE66D -- yellow
+#A1C607 -- blue light
+*/
+/*
+Global style
+------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+img {
+  width: 200px;
+}
+
+a {
+  color: #FFE66D;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: normal;
+  margin: 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-wrap h3 + p {
+  font-style: italic;
+}
+.item-wrap h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+/*
+Profile
+------------------------------------------- */
+header {
+  background: #2F3061;
+  color: #F7FFF7;
+}
+
+/*
+Projects
+------------------------------------------- */
+.projects {
+  background-color: bisque;
+}
+
+.projects a {
+  color: #2F3061;
+}
+
+.projects .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  background: rgb(47, 48, 97, 0.8);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+  margin: 0 auto;
+}
+
+
+/*
+Courses
+------------------------------------------- */
+.courses {
+  background-color: #A1C6D7;
+}
+
+
+/* Education
+-------------------------------------------  */
+.education {
+  background-image: url(https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  background-position: left top;
+  /* background-repeat: no-repeat; */
+  padding-botting: 100px;
+}
+.education p {
+  width: 60%;
+}
+
+/* contact info
+-------------------------------------------  */
+footer {
+  background-color: #2F3061;
+  color: #F7FFF7;
+}
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-info a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive
+-------------------------------------------  */
+@media screen and (min-width:650px) {
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:550px) {
+  header, footer {
+    text-align: center;
+  }
+  .course-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width:649px) {
+  h1 {
+    font-size: 75px;
+    margin: 20px;
+  }
+  h1, h2 {
+    line-height: 0.9;
+  }
+  .contact-info a {
+    padding: 5px;
+  }
+}
